@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>AUX Form Challenge</title>
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -44,11 +44,12 @@
         
         } else {
     ?>
-        
+        <header>
+                <h1>Sign up for Whoo!</h1>
+                <p>50 projects, 500 images, 10 videos, domain binding, and technical support.</p>
+        </header>
+
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-            
-            <h1>Sign up for Whoo!</h1>
-            <p>50 projects, 500 images, 10 videos, domain binding, and technical support</p>
 
             <fieldset>
                 <legend><span>1</span>First, name your portfolio</legend>

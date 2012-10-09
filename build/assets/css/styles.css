@@ -1,0 +1,87 @@
+body {
+	background-color: #b3e3ff;
+	font-family: 'Lucida Grande', Arial, Verdana, sans-serif;
+	text-rendering: optimizeLegibility;
+}
+header {
+	width: 520px;
+	margin: 15px auto 0;
+	padding: 29px 40px 25px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background: #aee0fd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #aee0fd 0%, #1b6c84 1%, #408ea4 2%, #297f97 3%, #1e7891 4%, #185e76 97%, #185e76 99%, #1b6c84 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aee0fd), color-stop(1%,#1b6c84), color-stop(2%,#408ea4), color-stop(3%,#297f97), color-stop(4%,#1e7891), color-stop(97%,#185e76), color-stop(99%,#185e76), color-stop(100%,#1b6c84)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #aee0fd 0%,#1b6c84 1%,#408ea4 2%,#297f97 3%,#1e7891 4%,#185e76 97%,#185e76 99%,#1b6c84 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #aee0fd 0%,#1b6c84 1%,#408ea4 2%,#297f97 3%,#1e7891 4%,#185e76 97%,#185e76 99%,#1b6c84 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #aee0fd 0%,#1b6c84 1%,#408ea4 2%,#297f97 3%,#1e7891 4%,#185e76 97%,#185e76 99%,#1b6c84 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #aee0fd 0%,#1b6c84 1%,#408ea4 2%,#297f97 3%,#1e7891 4%,#185e76 97%,#185e76 99%,#1b6c84 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aee0fd', endColorstr='#1b6c84',GradientType=0 ); /* IE6-9 */
+
+}
+h1 {
+	font-family: 'Kreon', serif;
+	font-weight: 300;
+	margin: 0;
+	color: #FFF;
+	font-size: 36px;
+	line-height: 1em;
+}
+p {
+	font-size: 12px;
+	margin: 0;
+	color: #b3e3ff;
+	margin-top: 5px;
+}
+form {
+	background-color: #FFF;
+	margin: 0 auto;
+	width: 520px;
+	padding: 30px 40px 40px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+fieldset {
+	border: none;
+	margin: 0 0 30px;
+	padding: 0;
+}
+section {
+	background-color: #f3f5f5;
+	padding: 35px 40px;
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	border-radius: 5px; 
+}
+legend {
+	margin-bottom: 5px;
+	font-family: 'Kreon', serif;
+	font-weight: 300;
+	font-size: 21px;
+	position: relative;
+	right: 44px;
+	color: #234b61;
+}
+legend span {
+	background-color: #52a3d4;
+	color: #FFF;
+	width:30px;
+	height:30px;
+	border-radius:50px;
+	text-align:center;
+	line-height:30px;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	position: relative;
+	right: 19px;
+	bottom: 3px;
+	border: 6px solid #FFF;
+}
+label {
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+input {
+	display: block;
+}
