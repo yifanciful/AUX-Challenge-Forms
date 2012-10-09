@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>AUX Form Challenge</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
@@ -47,20 +51,20 @@
             <p>50 projects, 500 images, 10 videos, domain binding, and technical support</p>
 
             <fieldset>
-            <legend><span>1</span>First, name your portfolio</legend>
-          
+                <legend><span>1</span>First, name your portfolio</legend>
+                <section>
                     <label for="title">Portfolio title</label>
                     <input type="text" id="title" name="title" minlength="2" />
             
                     <label for="address">Portfolio address</label>
                     <input type="url" id="address" name="address" minlength="2" />
-          
+                </section>
             </fieldset>
 
             <fieldset>
-            <legend><span>2</span>Now, enter your account details</legend>  
-          
-           
+                <legend><span>2</span>Now, enter your account details</legend>  
+                
+                <section>
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required />
          
@@ -72,12 +76,13 @@
                     <input type="password" id="password" name="password" required />
                     <input type="checkbox" id="show_pass" name="show_pass" value="1">
                     Show Password    
-         
+                </section>
             </fieldset>
 
             <fieldset>
                 <legend><span>3</span>Finally, enter your payment information <a href="#">Use PayPal</a></legend>
 
+                <section>
                     <label for="number">Card number</label>
                     <input type="text" id="number" name="cardnumber" required />
            
@@ -112,7 +117,7 @@
                         <option value="2017">2017</option>
                         <option value="2018">2018</option>
                     </select>
-         
+                </section>
             </fieldset>
 
     
