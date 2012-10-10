@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>AUX Form Challenge</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <script type="text/javascript" src="//use.typekit.net/ric2xcj.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link href='http://fonts.googleapis.com/css?family=Kreon:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
 </head>
 
@@ -24,7 +24,7 @@
             $emailFrom = strip_tags($_POST['email']);
             
             // who you're sending the email to (probably change this)
-            $emailTo = "apprentices@freshtilledsoil.com";
+            $emailTo = "yifan.zhangxu@freshtilledsoil.com";
             $subject = "Submission";
             
             // inset information into the body of the email
@@ -41,7 +41,7 @@
             if ($success){
                 echo 'sent';
             } else {
-                echo 'not sent';
+                echo 'Oops, we encounter a problem.';
             }
         
         } else {
@@ -57,11 +57,11 @@
                 <legend><span>1</span>First, name your portfolio</legend>
                 <div class="graybox">
                     <label for="title">Portfolio title</label>
-                    <input type="text" id="title" name="title" minlength="2" />
+                    <input type="text" id="title" name="title" minlength="2" required />
             
                     <label for="address">Portfolio address</label>
-                    <input type="url" id="address" name="address" minlength="2" />
-                </div class="graybox">
+                    <input type="url" id="address" name="address" minlength="2" required />
+                </div> <!--graybox-->
             </fieldset>
 
             <fieldset>
@@ -69,16 +69,16 @@
                 
                 <div class="graybox">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required />
+                    <input type="text" id="name" name="name" minlength="2" required />
          
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required />
+                    <input type="email" id="email" name="email" minlength="2" required />
                     <label for="email-note">NOTE: We'll never share your email, promise.</label>
     
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required />
+                    <input type="password" id="password" name="password" minlength="5" required />
                     <label for="show_pass"><input type="checkbox" id="show_pass" name="show_pass">Show Password</label>    
-                </div class="graybox">
+                </div> <!--graybox-->
             </fieldset>
 
             <fieldset>
@@ -89,10 +89,11 @@
                     <input type="text" id="number" name="cardnumber" required />
                     <div id="credit_img"></div>
       
-                    <label for="security">Security code</label>
-                    <input type="text" id="security" name="security" required />
-                    <div id="security_img"></div>
-          
+                    <label for="security">Security code
+                        <input type="text" id="security" name="security" required />
+                        <div id="security_img"></div>
+                    </label>
+                    
                     <label for="expiration">Expiration date</label>
                     <select id="expiration_month" name="expiration_month">
                         <option>Month</option>
@@ -121,7 +122,8 @@
                     </select>
 
                     <div id="lock_img"></div>
-                </div class="graybox">
+
+                </div> <!--graybox-->
             </fieldset>
 
     
@@ -134,7 +136,8 @@
         }
     ?>
 
-
-
+    <script src="assets/js/lib/jquery.js" type="text/javascript"></script>
+    <script src="assets/js/lib/jquery.validate.js" type="text/javascript"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

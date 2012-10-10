@@ -1,3 +1,4 @@
+/*------OVERALL------*/
 body {
 	background-color: #b3e3ff;
 	font-family: 'Lucida Grande', Arial, Verdana, sans-serif;
@@ -35,7 +36,7 @@ p {
 }
 form {
 	background-color: #FFF;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	width: 520px;
 	padding: 21px 40px 40px;
 	border-bottom-left-radius: 7px;
@@ -48,10 +49,11 @@ fieldset {
 }
 .graybox {
 	background-color: #f3f5f5;
-	padding: 30px 40px 10px;
+	padding: 11px 40px 40px;
 	-webkit-border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	border-radius: 5px; 
+	position: relative;
 }
 legend {
 	font-family: 'adelle','Kreon', serif;
@@ -81,6 +83,7 @@ label {
 	font-size: 12px;
 	color: #555;
 	display: block;
+	margin-top: 20px;
 }
 input {
 	display: block;
@@ -89,12 +92,13 @@ input {
 	border-radius: 5px; 
 	width: 440px;
 	height: 30px;
-	margin: 8px 0 25px;
+	margin: 8px 0 0px;
 	border: none;
 	-moz-box-shadow: inset 0px 1px 1px 1px #dadada;
 	-webkit-box-shadow: inset 0px 1px 1px 1px #dadada;
     box-shadow: inset 0px 1px 1px 1px #dadada;
 }
+/*------ACCOUNT DETAILS------*/
 input#email {
 	margin-bottom: 0;
 }
@@ -117,6 +121,7 @@ label[for=show_pass] {
 	font-size: 11px;
 	color: #666;
 }
+/*------PAYMENT INFO------*/
 legend a {
 	text-decoration: none;
 	font-family: 'Lucida Grande', Arial, Verdana, sans-serif;
@@ -130,50 +135,42 @@ legend a:hover {
 }
 input#number {
 	width: 240px;
-	display: inline;
-	margin-right: 3px;
 }
 #credit_img {
 	width: 189px;
 	height: 32px;
 	background: url(../images/sprite.png) 0 -122px;
-	display: inline-block;
+	position: absolute;
+	top: 53.25px;
+	right: 40px;
+}
+label[for=security] {
 	position: relative;
-	top: 10.45px;
 }
 input#security {
 	width: 80px;
-	display: inline;
-	margin-right: 3px;
 }
 #security_img {
 	width: 62px;
 	height: 32px;
 	background: url(../images/sprite.png) 0 -374px;
-	display: inline-block;
-	position: relative;
-	top: 10.75px;
-}
-select {
-	color: #555;
+	position: absolute;
+	top: 23px;
+	left: 91px;
 }
 select#expiration_month {
 	width: 120px;
-	height: 25px;
 }
 select#expiration_year {
 	width: 60px;
-	height: 25px;
-	margin-bottom: 30px;
 }
 #lock_img {
 	width: 17px;
 	height: 20px;
 	background: url(../images/sprite.png) -60px -498px;
-	position: relative;
-	top: 30px;
-	left: 260px;
-	display: inline-block;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
 }
 button {
 	font-family: 'adelle', 'Kreon', serif;
@@ -196,4 +193,10 @@ button {
    	color: #FFF;
    	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); 
    	cursor: pointer;
+}
+/*------JS STYLES------*/
+label.error {
+	color: #e6623a;
+	display: block;
+	margin-top: 5px;
 }
