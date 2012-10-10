@@ -5,7 +5,9 @@
     <title>AUX Form Challenge</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
-    <link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="//use.typekit.net/ric2xcj.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link href='http://fonts.googleapis.com/css?family=Kreon:300' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -53,72 +55,73 @@
 
             <fieldset>
                 <legend><span>1</span>First, name your portfolio</legend>
-                <section>
+                <div class="graybox">
                     <label for="title">Portfolio title</label>
                     <input type="text" id="title" name="title" minlength="2" />
             
                     <label for="address">Portfolio address</label>
                     <input type="url" id="address" name="address" minlength="2" />
-                </section>
+                </div class="graybox">
             </fieldset>
 
             <fieldset>
                 <legend><span>2</span>Now, enter your account details</legend>  
                 
-                <section>
+                <div class="graybox">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required />
          
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required />
-                    <aside>NOTE: We'll never share your email, promise.</aside>
+                    <label for="email-note">NOTE: We'll never share your email, promise.</label>
     
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required />
-                    <input type="checkbox" id="show_pass" name="show_pass" value="1">
-                    Show Password    
-                </section>
+                    <label for="show_pass"><input type="checkbox" id="show_pass" name="show_pass">Show Password</label>    
+                </div class="graybox">
             </fieldset>
 
             <fieldset>
                 <legend><span>3</span>Finally, enter your payment information <a href="#">Use PayPal</a></legend>
 
-                <section>
+                <div class="graybox">
                     <label for="number">Card number</label>
                     <input type="text" id="number" name="cardnumber" required />
-           
+                    <div id="credit_img"></div>
       
                     <label for="security">Security code</label>
                     <input type="text" id="security" name="security" required />
-         
+                    <div id="security_img"></div>
           
-                    <label for="expiration">Expiration date:</label>
+                    <label for="expiration">Expiration date</label>
                     <select id="expiration_month" name="expiration_month">
-                        <option value="">Month</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
+                        <option>Month</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
                     </select>
                     <select id="expiration_year" name="expiration_year">
-                        <option value="">Year</option>
-                        <option value="2012">2012</option>
-                        <option value="2013">2013</option>
-                        <option value="2014">2014</option>
-                        <option value="2015">2015</option>
-                        <option value="2016">2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
+                        <option>Year</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
                     </select>
-                </section>
+
+                    <div id="lock_img"></div>
+                </div class="graybox">
             </fieldset>
 
     
