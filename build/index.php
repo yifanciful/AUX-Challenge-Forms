@@ -6,9 +6,11 @@
 
     <script type="text/javascript" src="//use.typekit.net/ric2xcj.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
     <link href='http://fonts.googleapis.com/css?family=Kreon:300' rel='stylesheet' type='text/css'>
+    
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
-
+    <script src="assets/js/lib/modernizr.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -53,8 +55,8 @@
 
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 
-            <fieldset>
-                <legend><span>1</span>First, name your portfolio</legend>
+            <fieldset><span>1</span>
+                <legend>First, name your portfolio</legend>
                 <div class="graybox">
                     <label for="title">Portfolio title</label>
                     <input type="text" id="title" name="title" minlength="2" required />
@@ -64,8 +66,8 @@
                 </div> <!--graybox-->
             </fieldset>
 
-            <fieldset>
-                <legend><span>2</span>Now, enter your account details</legend>  
+            <fieldset><span>2</span>
+                <legend>Now, enter your account details</legend>  
                 
                 <div class="graybox">
                     <label for="name">Name</label>
@@ -81,21 +83,33 @@
                 </div> <!--graybox-->
             </fieldset>
 
-            <fieldset>
-                <legend><span>3</span>Finally, enter your payment information <a href="#">Use PayPal</a></legend>
+            <fieldset><span>3</span>
+                <legend>Finally, enter your payment information</legend>
 
                 <div class="graybox">
-                    <label for="number">Card number</label>
-                    <input type="text" id="number" name="cardnumber" required />
+                    <label for="cardNumber">Card number</label>
+                    <input type="text" id="cardNumber" name="cardNumber" minlength="13" required />
+                    
+                    <div id="selectCard">
+                        <label for="cardType">Select your card type</label>
+                        <select id="cardType" name="CardType" required />
+                            <option>Card Type</option>
+                            <option value="amex">American Express</option>
+                            <option value="visa">VISA</option>
+                            <option value="discover">Discover</option>
+                            <option value="mastercard">Mastercard</option>
+                        </select>
+                    </div><!--selectCard-->
+
                     <div id="credit_img"></div>
-      
-                    <label for="security">Security code
-                        <input type="text" id="security" name="security" required />
+
+                    <label for="cvvNumber">Security code
+                        <input type="text" id="cvvNumber" name="cvvNumber" minlength="3" required />
                         <div id="security_img"></div>
                     </label>
-                    
+
                     <label for="expiration">Expiration date</label>
-                    <select id="expiration_month" name="expiration_month">
+                    <select id="expirationMonth" name="expirationMonth" required />
                         <option>Month</option>
                         <option>01</option>
                         <option>02</option>
@@ -110,7 +124,7 @@
                         <option>11</option>
                         <option>12</option>
                     </select>
-                    <select id="expiration_year" name="expiration_year">
+                    <select id="expirationYear" name="expirationYear" required />
                         <option>Year</option>
                         <option>2012</option>
                         <option>2013</option>
@@ -138,6 +152,6 @@
 
     <script src="assets/js/lib/jquery.js" type="text/javascript"></script>
     <script src="assets/js/lib/jquery.validate.js" type="text/javascript"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
 </body>
 </html>
